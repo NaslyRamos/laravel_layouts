@@ -1,0 +1,100 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #2980b9;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Estilo del menú principal */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    text-align: center;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #2980b9;
+    border-radius: 4px;
+}
+
+/* Submenús centrados */
+.has-submenu ul.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%; /* Coloca el submenú en el centro del elemento padre */
+    transform: translateX(-50%); /* Ajusta la posición para centrar el submenú */
+    background-color: #2980b9;
+    padding: 0;
+    margin: 0;
+    border-radius: 4px;
+    min-width: 100px;
+    z-index: 1000;
+}
+
+.has-submenu:hover ul.submenu {
+    display: block;
+}
+
+/* Estilo de los enlaces del submenú */
+.submenu li a {
+    padding: 10px 20px;
+    color: white;
+    text-align: center; /* Centra el texto en el submenú */
+    font-size: 0.9rem;
+}
+
+.submenu li a:hover {
+    background-color: #3498db; /* Color de fondo cuando el mouse esté sobre el enlace */
+}
+
+/* Estilo del contenedor principal */
+main {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo del footer */
+footer {
+    background-color: #2980b9;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
